@@ -1,0 +1,161 @@
+@-moz-document domain("tabun.everypony.ru") {
+
+/* фикс синего свечения вокруг активного объекта для google chrome */
+textarea:focus, select:focus, .button:focus, .input-text:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border-color: #666 !important;
+}
+
+/* фикс кривого отображения поля ввода текста в комментах */
+textarea.markItUpEditor {width: 100% !important; min-height: 100px !important;}
+
+/* обновлялка комментов */
+.toolbar {top: 30vh !important;}
+
+.toolbar section {border: none;	border-radius: 10px; margin-right: 10px; box-shadow: 0 0 5px #666;}
+
+.toolbar .toolbar-update .update-comments i {
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI1NDMuMjc2cHgiIGhlaWdodD0iNTQzLjI3NnB4IiB2aWV3Qm94PSIwIDAgNTQzLjI3NiA1NDMuMjc2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1NDMuMjc2IDU0My4yNzYiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGcgaWQ9IlhNTElEXzFfIj4NCgkJPGc+DQoJCQk8cGF0aCBmaWxsPSIjNjY2NjY2IiBkPSJNNDc4Ljk5OCwyNjUuMTY4YzAsNTcuOTctMjUuNDUsMTEyLjY4LTY5LjgyLDE1MC4wOWwtMzguNTMtNDUuNzNjMzAuODUtMjYuMDEsNDguNTUtNjQuMDUsNDguNTUtMTA0LjM2DQoJCQkJYzAtNzIuNTEtNTYuODktMTMxLjgtMTI4LjM1LTEzNi4wMWgtMjkuMjZsMjQuNjQsNjIuMzdjMC44MywyLjA4LDAuMTUsNC40Ny0xLjY1LDUuODJjLTEuNzksMS4zNS00LjI2LDEuMzUtNi4wNS0wLjAzDQoJCQkJbC0xMjIuNS05NC4xOGMtMS4yMy0wLjk1LTEuOTUtMi40LTEuOTUtMy45N2MwLTEuNTUsMC43Mi0zLjAyLDEuOTUtMy45NmwxMjIuNTEtOTQuMThjMC45LTAuNjksMS45Ny0xLjAzLDMuMDQtMS4wMw0KCQkJCWMxLjA2LDAsMi4xMiwwLjMzLDMuMDIsMS4wMWMxLjc5LDEuMzQsMi40NiwzLjc0LDEuNjQsNS44MmwtMjQuNjQsNjIuMzZsMjEuMTksMC4wNnYtMC4zMWM3LjU3LDAsMTUuMDQsMC40OCwyMi4zOSwxLjMyDQoJCQkJYzQuODgsMC41MSwxMC4zMywxLjIzLDE0LjQ2LDIuMkM0MTAuMjU4LDg5Ljc1OCw0NzguOTk4LDE2OS41NTgsNDc4Ljk5OCwyNjUuMTY4eiIvPg0KCQkJPHBhdGggZmlsbD0iIzY2NjY2NiIgZD0iTTM4Ny4yMzgsNDQwLjEzOGMxLjIzLDAuOTUsMS45NiwyLjQsMS45NiwzLjk2cy0wLjczLDMuMDItMS45NiwzLjk2bC0xMjIuNDksOTQuMTkNCgkJCQljLTAuOSwwLjY5LTEuOTYsMS4wMy0zLjA0LDEuMDNjLTEuMDcsMC0yLjEyLTAuMzMtMy4wMi0xLjAxYy0xLjc5LTEuMzQtMi40Ni0zLjczLTEuNjQtNS44M2wyNC42NC02Mi4zNWwtMjEuMTktMC4wN3YwLjMyDQoJCQkJYy03LjU3LDAtMTUuMDQtMC40OC0yMi4zOS0xLjMyYy00Ljg4LTAuNTEtMTAuMzItMS4yMy0xNC40Ni0yLjJjLTkwLjY0LTE3LjMtMTU5LjM3LTk3LjExLTE1OS4zNy0xOTIuNw0KCQkJCWMwLTU0LjI3LDIxLjY1LTEwNC43Niw2MC45Ny0xNDIuMThsNDEuMjMsNDMuMzNjLTI3LjM0LDI2LjAxLTQyLjQsNjEuMTItNDIuNCw5OC44NGMwLDcyLjUsNTYuOSwxMzEuOCwxMjguMzUsMTM2LjAyaDI5LjI1DQoJCQkJbC0yNC42My02Mi4zN2MtMC44My0yLjA5LTAuMTYtNC40NywxLjY0LTUuODJjMS43OS0xLjM2LDQuMjctMS4zNiw2LjA1LDAuMDJMMzg3LjIzOCw0NDAuMTM4eiIvPg0KCQk8L2c+DQoJCTxnPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=);
+	background-size: cover;
+	margin-bottom: 5px;
+}
+
+.toolbar .toolbar-update .update-comments.active i {-webkit-animation: rt 1s infinite; animation: rt 1s infinite;}
+
+@-webkit-keyframes rt {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(-360deg);}
+}
+
+@keyframes rt {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+/* аватарки */
+.avatar, .avatar img, .comment-avatar {border-radius: 50% !important;}
+
+/* шрифты */
+body, #c-header {font-family: Arial, sans-serif !important;}
+
+.text pre, .markItUpEditor {font-family: Consolas, monospace !important;}
+
+/* widemode */
+#widemode {
+	border: none !important;
+	bottom: 1vw;
+	right: 1vw;
+	border-radius: 10px;
+	width: 25px;
+	height: 25px;
+	padding: 7px 0px 10px 10px;
+	box-shadow: 0 0 5px #666;
+	transition: box-shadow, background, border-radius 0.5s;
+}
+
+#widemode * {display: none;}
+
+#widemode:hover * {display: inline-block;}
+
+#widemode:hover {width: inherit; height: inherit; border-radius: 0;}
+
+	/* костыль для табун фиксес */
+#widemode a[title="Настройки user-script'а TabunFixes"] {display: none !important;}
+
+#widemode:hover a[title="Настройки user-script'а TabunFixes"] {display: inline-block !important;}
+
+#widemode:hover #tabun-fixes-chronology-timeline {width: 50%; display: inline-block !important;}
+
+#widemode:hover #tabun-fixes-chronology {width: 100%; display: inline-block !important;}
+
+#up-switch, #down-switch {display: none !important;}
+
+/* переключатель постов */
+.toolbar .toolbar-topic {display: none;}
+
+/* комменты */
+.icon-synio-link {
+	width: 14px;
+	height: 14px;
+	background-position: 0;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2MTIgNzkyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2MTIgNzkyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiM5Njk2OTYiIGQ9Ik02MTIsNDQ1LjZsLTI4LjEsMTkwLjhsLTU2LjgtNTUuMWMtMzkuNCwzMi4zLTc0LjcsMTE0LjktMjI4LjEsMTE4LjhjLTEyMS45LDAtMTcyLjctNzUtMjE3LjYtMTExLjINCgkJbC01MS44LDUwLjNMMCw0NTBsMTk0LjksMjguN2wtNTMuNyw1Mi4xYzAsMCw0Ni4xLDc2LjYsMTI1LjYsODEuOWwtMC4yLTMxMS40Yy00My0xNC45LTczLjktNTQuNS03My45LTEwMS40DQoJCWMwLTU5LjcsNDkuOC0xMDguMSwxMTEuNC0xMDguMVM0MTUuNCwxNDAuMyw0MTUuNCwyMDBjMCw0Ny42LTMxLjksODcuNi03NS45LDEwMmMwLjMsNjAuOCwxLjMsMzEyLTAuMSwzMTINCgkJQzQwNS40LDYxMi4xLDQ2Nyw1MjMsNDY3LDUyM2wtNTAuMi00OC44TDYxMiw0NDUuNnogTTM2MS41LDE5OC40YzAtMzAuOC0yNS43LTU1LjgtNTcuNS01NS44Yy0zMS43LDAtNTcuNCwyNS01Ny40LDU1LjgNCgkJYzAsMzAuOCwyNS43LDU1LjcsNTcuNCw1NS43QzMzNS44LDI1NC4xLDM2MS41LDIyOS4xLDM2MS41LDE5OC40eiIvPg0KPC9nPg0KPC9zdmc+DQo=) no-repeat;
+}
+
+.comment .folding {background: url(http://i.imgur.com/ioIlpw7.png) !important; background-size: auto 13px !important;}
+
+.comment .folding.folded {background-position: -14px -14px !important;}
+
+.comment-content {background: white;}
+
+.comment.comment-current .comment-content {background: #ffebeb; border-color: #e2d1d1;}
+
+/* выделение */
+::selection {background: rgba(0, 0, 255, 0.2);}
+
+::-moz-selection {background: rgba(0, 0, 255, 0.2);}
+
+/* стрелочки голосования */
+/* TODO: заменить на закодированные base64 иконки. Когда-нибудь... */ 
+.comment-info li.vote .vote-down {
+	width: 0 !important;
+	height: 0 !important;
+	background-image: none !important;
+	border-top: 15px solid #A30000;
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+}
+
+.comment-info li.vote .vote-up {
+	width: 0 !important;
+	height: 0 !important;
+	background-image: none !important;
+	border-bottom: 15px solid #00A300;
+	border-left: 10px solid transparent;
+	border-right: 0px solid transparent;
+	margin-right: 4px;
+}
+
+.vote-profile .vote-up, .topic-info-vote .vote-up {
+	width: 0 !important;
+	height: 0 !important;
+	border-bottom: 15px solid #00A300;
+	border-left: 10px solid transparent;
+	border-right: 0px solid transparent;
+	margin-right: 4px;
+	margin-top: 5px;
+}
+
+.vote-profile .vote-down, .topic-info-vote .vote-down {
+	width: 0 !important;
+	height: 0 !important;
+	border-top: 15px solid #A30000;
+	border-left: 0px solid transparent;
+	border-right: 10px solid transparent;
+	margin-top: 5px;
+}
+
+.vote-down, .vote-up {opacity: 0.2;}
+
+/* основные цвета */
+#container {background: white; box-shadow: 0px 0px 10px 0px #666;}
+
+body {background: #F0F0F0;}
+
+#c-header {background: #F50057;}
+
+#header {background: rgba(245, 0, 87, 0.1);}
+
+#logolink a, #c-header .main-menu li a {color: rgba(253, 229, 237, 1) !important;}
+
+/* фикс изогнутых краев у поиска */
+.block.block-type-search {border-radius: 0px;}
+
+.block-type-pseudomenu {border-radius: 5px 5px 0 0 !important;}
+
+.block.block-type-stream {border-radius: 0 0 5px 5px;}
+
+.comment-info li.comment-author.comment-topic-author a {color: #f50057 !important;}
+
+}
