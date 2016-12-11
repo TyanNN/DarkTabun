@@ -1,1 +1,3 @@
-<a href="https://userstyles.org/styles/136268/dark-tabun-v1-1">Темная тема для tabun.everypony.ru</a>
+Этот репозиторий сильно побит rebase'ом чтобы удалить ~~кое-чьи ошибки прошлого~~ 100 мегабайт картинок, поэтому истории совсем разные
+
+[Темная тема для tabun.everypony.ru](https://userstyles.org/styles/136268/dark-tabun-v1-1)
