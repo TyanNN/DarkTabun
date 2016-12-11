@@ -1,5 +1,14 @@
-@-moz-document domain("tabun.everypony.ru") {
+@-moz-document url-prefix("https://tabun.everypony.ru/"), url-prefix("https://tabun.everypony.ru/"), url-prefix("https://tabun.everypony.info/"), url-prefix("https://tabun.everypony.org/") {
 
+footer#footer { background: #202020; }
+
+.login.login-modal .login-container { background: #202020; }
+.login input[type="submit"] { color: #969696; background: #4D4D4D; border-color: #4D4D4D; box-shadow: none}
+.login input[type="text"],input[type="password"] { color: #969696; background: rgba(255, 255, 255, 0.2); font-family: Consolas, monospace !important; box-shadow: none; border-color: #4D4D4D;}
+	
+
+
+	
 .block.block-type-search, .nav.nav-menu, .blog, section.block.block-type-pseudomenu, section.block.block-type-stream, .spoiler-title, .button, input.input-text, select, .modal, .comment-preview, #container {border-radius: 0 !important;}
 
 .comment .folding {background: url(http://i.imgur.com/Pq6QlnL.png) !important; background-size: auto 13px !important;}
@@ -548,5 +557,6 @@ img[src="http://files.everypony.ru/tabun/pinkamena.png"] {
 	background-position: 0;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2MTIgNzkyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2MTIgNzkyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiM5Njk2OTYiIGQ9Ik02MTIsNDQ1LjZsLTI4LjEsMTkwLjhsLTU2LjgtNTUuMWMtMzkuNCwzMi4zLTc0LjcsMTE0LjktMjI4LjEsMTE4LjhjLTEyMS45LDAtMTcyLjctNzUtMjE3LjYtMTExLjINCgkJbC01MS44LDUwLjNMMCw0NTBsMTk0LjksMjguN2wtNTMuNyw1Mi4xYzAsMCw0Ni4xLDc2LjYsMTI1LjYsODEuOWwtMC4yLTMxMS40Yy00My0xNC45LTczLjktNTQuNS03My45LTEwMS40DQoJCWMwLTU5LjcsNDkuOC0xMDguMSwxMTEuNC0xMDguMVM0MTUuNCwxNDAuMyw0MTUuNCwyMDBjMCw0Ny42LTMxLjksODcuNi03NS45LDEwMmMwLjMsNjAuOCwxLjMsMzEyLTAuMSwzMTINCgkJQzQwNS40LDYxMi4xLDQ2Nyw1MjMsNDY3LDUyM2wtNTAuMi00OC44TDYxMiw0NDUuNnogTTM2MS41LDE5OC40YzAtMzAuOC0yNS43LTU1LjgtNTcuNS01NS44Yy0zMS43LDAtNTcuNCwyNS01Ny40LDU1LjgNCgkJYzAsMzAuOCwyNS43LDU1LjcsNTcuNCw1NS43QzMzNS44LDI1NC4xLDM2MS41LDIyOS4xLDM2MS41LDE5OC40eiIvPg0KPC9nPg0KPC9zdmc+DQo=) no-repeat;
 }
+
 
 }
